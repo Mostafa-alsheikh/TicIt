@@ -1,0 +1,12 @@
+# Node dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+errors.log
+
+# App data
+tasks.json
+users.json
