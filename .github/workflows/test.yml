@@ -25,4 +25,5 @@ jobs:
         env:
           JWT_SECRET: test_secret_key
           MONGO_URI: mongodb://localhost:27017/test
+          NODE_ENV: test
         run: npm test
