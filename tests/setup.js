@@ -4,13 +4,11 @@ const { MongoMemoryServer } = require('mongodb-memory-server');
 let mongod;
 
 beforeAll(async () => {
-    if (mongoose.connection.readyState !== 0) {
-        await mongoose.disconnect();
-    }
+    await mongoose.connection.close();
     mongod = await MongoMemoryServer.create();
     const uri = mongod.getUri();
     await mongoose.connect(uri);
-}, 30000);
+}, 60000);
 
 afterEach(async () => {
     const collections = mongoose.connection.collections;
