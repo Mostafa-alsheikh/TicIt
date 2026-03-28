@@ -143,6 +143,7 @@ Comprehensive tests covering auth, CRUD, pagination, search, sorting, role-based
 - Weekly productivity reports
 - Social Features - Comparing streaks with friends
 - Mobile app
+- Refresh Token Support
 
 ---
 
